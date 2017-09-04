@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <title>HIRE ME!</title>
+</head>
+<style>
+#bg {
+  background-image: url("images/basketball-floor.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: auto;
+}
+</style>
+<header>
+
+  <span class = "header-text"> NBAHIREME.COM </span>
+
+  <div class="nav1">
+    <ul>
+      <li><a href="#">about</li>
+        <li><a href="#">resumé</li>
+          <li><a href="#">portfolio</li>
+            <li><a href="#">contact</li>
+            </ul>
+          </div>
+</header>
+
+<body>
+
+  <div id = "bg">
+    <div id = "container">
+
+      <!-- the grid -->
+      <div class="row">
+        <div class="column">
+          <img src="images/DIRK.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/KOBE.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/ESPN.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/Chef.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/Jabari.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/JabariParker.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/Harden13.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/James13.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/Ginobli.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/HOMIE.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/KING.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/Flash.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/LBJ.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/LA12.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/DH8.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="images/Teamwork.jpg" style="width:100%; height: 150px;" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+        </div>
+      </div>
+      <!-- view for when image is clicked and expands -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <!-- tells user which image they are currently on -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 16</div>
+            <img src="images/DIRK.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 16</div>
+            <img src="images/KOBE.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 16</div>
+            <img src="images/ESPN.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 16</div>
+            <img src="images/Chef.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 16</div>
+            <img src="images/Jabari.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 16</div>
+            <img src="images/JabariParker.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">7 / 16</div>
+            <img src="images/Harden13.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">8 / 16</div>
+            <img src="images/James13.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">9 / 16</div>
+            <img src="images/Ginobli.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">10 / 16</div>
+            <img src="images/HOMIE.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">11 / 16</div>
+            <img src="images/KING.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">12 / 16</div>
+            <img src="images/Flash.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">13 / 16</div>
+            <img src="images/LBJ.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">14 / 16</div>
+            <img src="images/LA12.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">15 / 16</div>
+            <img src="images/DH8.jpg" style="width:100%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">16 / 16</div>
+            <img src="images/Teamwork.jpg" style="width:100%">
+          </div>
+
+
+          <!-- arrows to move an to next image -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- caption only if necessary -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- grid view in modal view (when image is clicked and enlarged) -->
+          <div class="column">
+            <img class="demo cursor" src="images/DIRK.jpg" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/KOBE.jpg" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/ESPN.jpg" style="width:100%" onclick="currentSlide(3)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Chef.jpg" style="width:100%" onclick="currentSlide(4)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Jabari.jpg" style="width:100%" onclick="currentSlide(5)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/JabariParker.jpg" style="width:100%" onclick="currentSlide(6)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Harden13.jpg" style="width:100%" onclick="currentSlide(7)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/James13.jpg" style="width:100%" onclick="currentSlide(8)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Ginobli.jpg" style="width:100%" onclick="currentSlide(9)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/HOMIE.jpg" style="width:100%" onclick="currentSlide(10)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/KING.jpg" style="width:100%" onclick="currentSlide(11)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Flash.jpg" style="width:100%" onclick="currentSlide(12)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/LBJ.jpg" style="width:100%" onclick="currentSlide(13)">
+          </div>
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/LA12.jpg" style="width:100%" onclick="currentSlide(14)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/DH8.jpg" style="width:100%" onclick="currentSlide(15)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/Teamwork.jpg" style="width:100%" onclick="currentSlide(16)">
+        </div>
+
+
+      </div>
+
+      <!-- shows the modal view -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+
+
+
+
+
+
+
+      <img src="images/line_break.png" class="divider2">
+
+
+    </body>
+    <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    </html>
